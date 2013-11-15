@@ -3,6 +3,8 @@ Feature: Checking for Financial Aid Requirements
 	So I can view student financial aid status
 	I want to view financial aid requirements
 
+  # might want to check this story with real students - is it language they understand
+
 Background: Contact in Database
 
 	Given the following contact exists:
