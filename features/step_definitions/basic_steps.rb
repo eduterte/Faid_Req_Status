@@ -2,6 +2,22 @@ Given(/^that I am on the home page$/) do
   visit 'index.html'
 end
 
+When(/^I go to the student details page$/) do
+  visit 'student_details.html'
+end
+
+And(/^when I go to student status page$/) do
+  visit 'student_status.html'
+end
+
+And(/^when I go to financial aid award page$/) do
+  visit 'financial_aid_award.html'
+end
+
+And(/^when I go to financial aid requirements page$/) do
+  visit 'financial_aid_requirements.html'
+end
+
 Then(/^I should see "(.*?)"$/) do |content|
   page.should have_content content
 end
@@ -16,8 +32,24 @@ end
 
 Given(/^the following contact exists:$/) do |table|
   # table is a Cucumber::Ast::Table
+  #pending # express the regexp above with the code you wish you had
+end
+
+Given(/^the following contact submitted the FAFSA \(Student Status Details in Database\):$/) do |table|
+  # table is a Cucumber::Ast::Table
   #pending # this would be written into the database if we were testing with one
 end
+
+Given(/^the following contact was awarded \(Financial Aid Award Offer\):$/) do |table|
+  # table is a Cucumber::Ast::Table
+  #pending # this would be written into the database if we were testing with one
+end
+
+Given(/^the following contact accepted\/declined awards \(Financial Aid Requirements\):$/) do |table|
+  # table is a Cucumber::Ast::Table
+  #pending # this would be written into the database if we were testing with one
+end
+
 
 When(/^I go to the Users Page$/) do
   visit 'users.html'
