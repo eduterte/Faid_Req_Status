@@ -35,7 +35,7 @@ Scenario: Update student status
 	Then I should see "Accept, Accept, Declined, Accept, Accept, Accept"
 	And when I go to financial aid requirements page
 	Then I should see "Satisfied, Satisfied, Unsatisfied, Satisfied, Unsatisfied, Unsatisfied"
-	And when I go to financial aid requirements page
+	And when I go to financial aid requirements page details
 	And I fill in "Parent_Tax_Trans" with "Received"
 	Then I should see "Satisfied, Satisfied, Unsatisfied, Satisfied, Unsatisfied, Received"
 	But I should not see "Unsatisfied" in "Parent_Tax_Trans" requirement

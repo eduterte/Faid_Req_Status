@@ -7,11 +7,5 @@
 Unsatisfied, Satisfied, Unsatisfied, Satisfied, Unsatisfied, Unsatisfied
 
 Satisfied, Satisfied, Unsatisfied, Satisfied, Unsatisfied, Unsatisfied
-
-<form id='add' action="" method="get">
-Parent Tax Transcript <input type="text"  name="Parent_Tax_Trans">
-
-Satisfied, Satisfied, Unsatisfied, Satisfied, Unsatisfied, Received
-</form>
 </body>
 </html>
