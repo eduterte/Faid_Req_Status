@@ -3,29 +3,29 @@ Feature: Updating Financial Aid Requirements
 	So I can update student financial aid requirements
 	I want to update student requirements
 	
-Background: Contact in Database
+#Background: Contact in Database
 
-	Given the following contact exists:
-	| first_name | last_name | email            | address   | town    | countY  | post_code | telephone   |
-	| John       | Doe       | john@example.com | 1 Sum St. | ATown   | Sumwhere| 12345     | 000-000-0000|
+	#Given the following contact exists:
+	#| first_name | last_name | email            | address   | town    | countY  | post_code | telephone   |
+	#| John       | Doe       | john@example.com | 1 Sum St. | ATown   | Sumwhere| 12345     | 000-000-0000|
 
-Background: Student Status Details in Database
+#Background: Student Status Details in Database
 
-	Given the student submitted the FAFSA:
-	| FAFSA_submit | level       | military  | Date_of_Birth| Admitted  | FA_Award | Requirements | 
-	| Yes          | Undergrad   | No        | 01/01/1991   | Yes       | Offered  | Unsatisfied  |	
+	#Given the student submitted the FAFSA:
+	#| FAFSA_submit | level       | military  | Date_of_Birth| Admitted  | FA_Award | Requirements | 
+	#| Yes          | Undergrad   | No        | 01/01/1991   | Yes       | Offered  | Unsatisfied  |	
 
-Background: Student's Financial Aid Award Offer
+#Background: Student's Financial Aid Award Offer
 
-	Given the student completed accepting/declining all awards:
-	| Pell_Grant   | HPU_Grant   | Fed_Unsub_Loan | Fed_Sub_Loan | Fed_Parent_Loan | Scholarship | 
-	| Accept       | Accept      | Declined       | Accept       | Accept          | Accept      |
+	#Given the student completed accepting/declining all awards:
+	#| Pell_Grant   | HPU_Grant   | Fed_Unsub_Loan | Fed_Sub_Loan | Fed_Parent_Loan | Scholarship | 
+	#| Accept       | Accept      | Declined       | Accept       | Accept          | Accept      |
 
-Background: Financial Aid Requirements
+#Background: Financial Aid Requirements
 	
-	Given the following student submits Parent Tax Transcript and completely accepted/declined awards:
-	| Award_Package | Dep_Verif   | Loan_Entrance | Scholar_Agree | ParentLoan_App | Parent_Tax_Trans |
-	| Satisfied     | Satisfied   | Unsatisfied   | Satisfied     | Unsatisfied    | Unsatisfied      |
+	#Given the following student submits Parent Tax Transcript and completely accepted/declined awards:
+	#| Award_Package | Dep_Verif   | Loan_Entrance | Scholar_Agree | ParentLoan_App | Parent_Tax_Trans |
+	#| Satisfied     | Satisfied   | Unsatisfied   | Satisfied     | Unsatisfied    | Unsatisfied      |
 	
 Scenario: Update student status
 	When I go to the student details page
